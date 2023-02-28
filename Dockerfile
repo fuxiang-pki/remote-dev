@@ -2,8 +2,8 @@ FROM maven:3.9.0-eclipse-temurin-17-focal
 
 
 RUN apt-get update \
-    apt-get install software-properties-common \
-    apt-get install -qy curl
+    && apt-get install software-properties-common \
+    && apt-get install -qy curl
 
 # Soffice
 RUN apt-add-repository --yes ppa:wasta-linux/libreoffice-7-3  \
