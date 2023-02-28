@@ -13,6 +13,7 @@ RUN apt-add-repository --yes ppa:wasta-linux/libreoffice-7-3  \
 
 # Node JS
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash \
+    && source ~/.bashrc \
     && nvm install 16.18.0 \
     && node -v
 
