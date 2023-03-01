@@ -20,4 +20,4 @@ jobs:
           pwd
           ls -l
           docker build -t remote-dev:latest .
-          docker run --name dev remote-dev:latest
+          docker run --name dev remote-dev:latest echo "Hello"
