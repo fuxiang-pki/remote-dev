@@ -21,4 +21,4 @@ SHELL ["/bin/bash", "--login", "-c"]
 
 ENTRYPOINT ["/bin/bash", "-c"]
 
-CMD ["java", "-version"]
+CMD ["java", "--version"]
